@@ -2,6 +2,25 @@
 <head>
 <title>Calculette HTML</title>
 </head>
+<script> 
+    
+    function calculer() 
+    { 
+        let a = document.getElementById("output").value 
+        let b = eval(a) 
+        document.getElementById("output").value = b 
+    } 
+    
+    function afficher(val) 
+    { 
+        document.getElementById("output").value+=val 
+    } 
+     
+    function effacer() 
+    { 
+        document.getElementById("output").value = "" 
+    } 
+ </script>
 <body bgcolor= "#000000" text= "gold">
 <form name="calculette" >
 <input type="button" value="1" onClick="document.calculette.ans.value+='1'">
