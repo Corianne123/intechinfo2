@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 const rl = require("readlinesync");
 const fs = require("fs");
@@ -14,4 +15,12 @@ function manger() {
     console.log(visiteur);
 }
 manger();
+=======
+
+function test() {
+    console.log('test');
+    console.log('bug');
+}
+
+>>>>>>> 7b1c5ba3f2f10e9089bf2daa3653ddbcd4293784
 
