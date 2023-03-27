@@ -2,22 +2,63 @@
 <head>
 <title>Calculette HTML</title>
 </head>
-<body bgcolor= "#000000" text= "gold">
+<body  text= "gold">
+    <h1>Calculatrice</h1>
 <form name="calculette" >
-<input type="button" value="1" onClick="document.calculette.ans.value+='1'">
-<input type="button" value="2" onClick="document.calculette.ans.value+='2'">
-<input type="button" value="3" onClick="document.calculette.ans.value+='3'">
-<input type="button" value="+" onClick="document.calculette.ans.value+='+'">
-<input type="button" value="4" onClick="document.calculette.ans.value+='4'">
-<input type="button" value="5" onClick="document.calculette.ans.value+='5'">
-<input type="button" value="6" onClick="document.calculette.ans.value+='6'">
-<input type="button" value="-" onClick="document.calculette.ans.value+='-'">
-<input type="button" value="7" onClick="document.calculette.ans.value+='7'">
-<input type="button" value="8" onClick="document.calculette.ans.value+='8'">
-<input type="button" value="9" onClick="document.calculette.ans.value+='9'">
-<input type="button" value="*" onClick="document.calculette.ans.value+='*'">
-<input type="button" value="/" onClick="document.calculette.ans.value+='/'">
-<input type="button" value="0" onClick="document.calculette.ans.value+='0'">
+    <div style="display: flex;flex-direction: row;justify-content: space-between; ">
+        <div>
+            <input type="button" value="1" onClick="document.calculette.ans.value+='1'">
+        </div>
+        <div>
+            <input type="button" value="2" onClick="document.calculette.ans.value+='2'">
+        </div>
+        <div>
+            <input type="button" value="3" onClick="document.calculette.ans.value+='3'">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between; ">
+        <div>
+            <input type="button" value="4" onClick="document.calculette.ans.value+='4'">
+        </div>
+        <div>
+            <input type="button" value="5" onClick="document.calculette.ans.value+='5'">
+        </div>
+        <div>
+            <input type="button" value="6" onClick="document.calculette.ans.value+='6'">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between; ">
+        <div>
+            <input type="button" value="7" onClick="document.calculette.ans.value+='7'">
+        </div>
+        <div>
+            <input type="button" value="8" onClick="document.calculette.ans.value+='8'">
+        </div>
+        <div>
+            <input type="button" value="9" onClick="document.calculette.ans.value+='9'">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between; ">
+        <div>
+            <input type="button" value="0" onClick="document.calculette.ans.value+='0'">
+        </div>
+        <div>
+            <input type="button" value="+" onClick="document.calculette.ans.value+='+'">
+        </div>
+        <div>
+            <input type="button" value="-" onClick="document.calculette.ans.value+='-'">
+        </div>
+    </div>
+    <div style="display: flex;flex-direction: row;justify-content: space-between; ">
+        <div>
+        </div>
+        <div>
+            <input type="button" value="*" onClick="document.calculette.ans.value+='*'">
+        </div>
+        <div>
+            <input type="button" value="/" onClick="document.calculette.ans.value+='/'">
+        </div>
+    </div>
 <input type="reset" value="Réinitialiser">
 <input type="button" value="=" onClick="document. calculette.ans.value=eval(document.calculette.ans.value)">
 <br>Le résultat est <input type="textfield" name="ans" value="">
